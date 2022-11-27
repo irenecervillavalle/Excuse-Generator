@@ -22,7 +22,8 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let excuse = [
+  //opción anterior ...
+  //let excuse = [
     aleatorio(who) +
       " " +
       aleatorio(action) +
@@ -31,6 +32,8 @@ window.onload = function() {
       " " +
       aleatorio(when)
   ];
+  //opción Template literal:
+  let excuse = `${aleatorio(who)} ${aleatorio(action)} ${aleatorio(what)} ${aleatorio(when)}`;
 
   let pExcuse = document.querySelector(".js-excuse");
   pExcuse.innerHTML = excuse;
