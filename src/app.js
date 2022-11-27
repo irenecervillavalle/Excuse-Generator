@@ -22,18 +22,12 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  //opción anterior ...
-  //let excuse = [
-    aleatorio(who) +
-      " " +
-      aleatorio(action) +
-      " " +
-      aleatorio(what) +
-      " " +
-      aleatorio(when)
-  ];
-  //opción Template literal:
-  let excuse = `${aleatorio(who)} ${aleatorio(action)} ${aleatorio(what)} ${aleatorio(when)}`;
+  //opción concatenar signo + ...
+  //let excuse = [aleatorio(who) +" " +aleatorio(action) + " " +aleatorio(what) +" " +aleatorio(when];
+  //opción concatenar Template literal:
+  let excuse = `${aleatorio(who)} ${aleatorio(action)} ${aleatorio(
+    what
+  )} ${aleatorio(when)}`;
 
   let pExcuse = document.querySelector(".js-excuse");
   pExcuse.innerHTML = excuse;
